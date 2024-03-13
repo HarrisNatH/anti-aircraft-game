@@ -14,11 +14,13 @@ public class Target {
      * A method to create a 3D array and assign a random target in it 
      */
     public void init() {
+        //create a random target at designated place
         Random rand = new Random();
         targetX = rand.nextInt(grid.length);
         targetY = rand.nextInt(grid[0].length);
         targetZ = rand.nextInt(grid[0][0].length);
         
+        //create an empty 3D array
         for (int x = 0; x < grid.length; x++) {
             for (int y = 0; y < grid[x].length; y++) {
                 for (int z = 0; z < grid[x][y].length; z++) {
@@ -26,6 +28,7 @@ public class Target {
                 }
             }
         }
+        //assigning a target in the 3D array
         grid[targetX][targetY][targetZ] = 1;
     }
 
