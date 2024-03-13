@@ -7,9 +7,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String playAgain = "y";
         while(playAgain.equalsIgnoreCase("y")) {
-            Target target = new Target(10);
+            //asks player to input a number to create a 3D map
+            System.out.print("Please enter a number to init 3D map: ");
+            int size = scanner.nextInt();
+            Target target = new Target(size);
             target.init();
-            System.out.println("Here they come! Try to bring the plane down!");
+            //game start
+            int range = size-1;
+            System.out.println("Here they come! Try to bring the plane down! (input between 0 to " + range + ")");
             while (true) {
                 System.out.print("Enter a coordinate X: ");
                 int x = scanner.nextInt();

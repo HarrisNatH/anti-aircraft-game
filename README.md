@@ -50,9 +50,13 @@ This is a past exercise during university, a game where a player guess the coord
 Simply press run the program.
 
 ## Code details
+The game will begin by asking player to input a number to initialises 3D array with a random target at certain position unknown to player. Afterwards, player will be required to issue a coordinate command for all 3 axis.
 
+The command will return either a HIT / OUT_OF_RANGE / FAIL. As long as a target hasn't been hit, player will be looped back to fire command.
 
+The game ends when the target is hit, and prompts player to play again or end.
 
+Thank you for reading and happy shooting!
 
 ## LICENSE
 This project has a MIT license.
